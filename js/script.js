@@ -23,3 +23,25 @@ function newArray(obj) {
     return x;
 }
 
+
+//array --random elemnts (no-repeat)
+
+
+function newArrayRandom(length, start, end) {
+  var arr = [];
+  for (var i = start; i < end; i++) {
+    arr.push(i);
+  }
+  function sort() {
+    if (Math.random() > 0.5) {
+      return -1;
+    } else {
+      return 1;
+    }
+  }
+  arr.sort(sort);
+  arr.sort;
+  return arr.slice(0, length);
+}
+
+
